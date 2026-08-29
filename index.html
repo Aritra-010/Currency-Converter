@@ -1,15 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency converter</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+    <div id="authSection">
+        <button id="googleLoginBtn">Continue with Google</button>
+        <button id="logoutBtn" style="display: none">Logout</button>
+
+        <p id="userInfo"></p>
+    </div>
     <h1>CURRENCY CONVERTER</h1>
     <div class="converter">
-        <input type="number" id="amount" placeholder="Enter amount">
+        <input type="number" id="amount" placeholder="Enter amount" />
 
         <div class="converter_from">
             <select id="fromCurrency">
@@ -25,6 +33,7 @@
 
         <p id="result"></p>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
+
 </html>
